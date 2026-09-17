@@ -11,14 +11,14 @@ public class day16 {
         System.out.print("Masukkan jumlah siswa: ");
         int b = oh.nextInt();
 
-        int jumlahSetiapSiswa = a/b;
+        int jmlhPermenPerSiswa = a/b;
         int sisa = a%b;
 
         System.out.println();
         System.out.println("Output");
         System.out.println("Jumlah permen\t: "+a);
         System.out.println("Jumlah siswa\t: "+ b);
-        System.out.println("Setiap siswa mendapatkan : "+jumlahSetiapSiswa+" permen");
+        System.out.println("Setiap siswa mendapatkan : "+jmlhPermenPerSiswa+" permen");
         System.out.println("Permen yang tersisa\t: "+sisa+" permen");
     }
 }
