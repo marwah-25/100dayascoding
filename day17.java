@@ -34,7 +34,7 @@ public class day17 {
         poin *= 2; 
         System.out.println("Setelah promo Double Points (*=2): " + poin);
 
-        // Menampilkan poin akhir[cite: 1]
+        // Menampilkan poin akhir
         System.out.println("Poin Akhir Pelanggan\t\t: " + poin);
     }
 }
