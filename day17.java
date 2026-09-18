@@ -30,7 +30,7 @@ public class day17 {
         poin -= tukarPoin; 
         System.out.println("Setelah tukar poin (-" + tukarPoin + ")\t: " + poin);
 
-        // Mengalikan sisa poin dengan 2 untuk promo Double Points dengan operator *=[cite: 1]
+        // Mengalikan sisa poin dengan 2 untuk promo Double Points dengan operator *=
         poin *= 2; 
         System.out.println("Setelah promo Double Points (*=2): " + poin);
 
