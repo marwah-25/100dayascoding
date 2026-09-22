@@ -39,7 +39,7 @@ public class day21 {
         System.out.printf("Tinggi Badan\t: %.1f cm\n", tinggiBadan);
         System.out.printf("Huruf Awal\t: %c\n", hurufAwal);
         System.out.printf("Status Aktif\t: %b\n", statusMahasiswa);
-        System.out.printf("Saldo Awal\t: %.0f\n\n", saldo);
+        System.out.printf("Saldo Awal\t: Rp%.0f\n\n", saldo);
 
         // --- PROSES PENGOLAHAN DATA ---
 
@@ -74,12 +74,18 @@ public class day21 {
 
         // 11. Menampilkan Seluruh Hasil Pengolahan menggunakan printf()
         System.out.println("=== HASIL PENGOLAHAN DATA ===");
-        System.out.printf("Saldo awal\t\t: %.0f\n", Double.parseDouble(strSaldo));
-        System.out.printf("Setelah ditambah\t: %.0f\n", saldoSetelahTambah);
-        System.out.printf("Setelah dikurangi\t: %.0f\n", saldoSetelahKurang);
-        System.out.printf("Setelah dikali 2\t: %.0f\n", saldoSetelahKali);
-        System.out.printf("Setelah dibagi 5\t: %.0f\n", saldoSetelahBagi);
-    
+        System.out.printf("Saldo awal\t\t: Rp%.0f\n", Double.parseDouble(strSaldo));
+        System.out.printf("Setelah ditambah\t: Rp%.0f\n", saldoSetelahTambah);
+        System.out.printf("Setelah dikurangi\t: Rp%.0f\n", saldoSetelahKurang);
+        System.out.printf("Setelah dikali 2\t: Rp%.0f\n", saldoSetelahKali);
+        System.out.printf("Setelah dibagi 5\t: Rp%.0f\n", saldoSetelahBagi);
+        System.out.println("-----------------------------------");
+        System.out.printf("Umur setelah +1 tahun\t: %d\n", umur);
+        System.out.printf("Sisa bagi umur %% 2\t: %d (0 = Genap, 1 = Ganjil)\n", sisaBagiUmur);
+        System.out.printf("Umur ke double (Otomatis): %s\n", strHasilUmur);
+        System.out.printf("Tinggi badan ke int (Casting): %d cm\n", tinggiBadanInt);
+        System.out.printf("Saldo akhir (ke String)\t: %s\n", strHasilSaldo);
+
         input.close();
     }
 }
