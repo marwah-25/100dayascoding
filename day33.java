@@ -10,7 +10,7 @@ public class day33 {
         System.out.print("Apakah sudah terdaftar? : ");
         boolean terdaftar = m.nextBoolean();
 
-        if (nilai > 75 && terdaftar == true){
+        if (nilai >= 75 && terdaftar == true){
             System.out.println("Status : Boleh Mengikuti Ujian");
         }else{
             System.out.println("Status : Belum Boleh Mengikuti Ujian");
