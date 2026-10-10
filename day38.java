@@ -4,7 +4,7 @@ public class day38 {
     public static void main(String[] args) {
         Scanner m = new Scanner(System.in);
 
-        // 1. Tampilan Menu
+        // 1. Menampilkan daftar menu
         System.out.println("=== MENU WARTEG CYBER 2077 ===");
         System.out.println();
         System.out.println("1. Nasi Hologram (Rp 15000)");
@@ -19,7 +19,7 @@ public class day38 {
         String menu = "";
         int hargaSatuan = 0;
 
-        // Penentuan jenis menu berdasarkan nomor pesanan
+        // Pemilihan Menu (Memakai if-else if-else)
         if (nomor == 1) {
             menu = "Nasi Hologram";
             hargaSatuan = 15000;
@@ -31,8 +31,11 @@ public class day38 {
             hargaSatuan = 5000;
         } else {
             System.out.println("Waduhhh pesanan yang kamu masukkan tidak ada di menu!!!");
+            m.close();
+            return;
         }
 
+        // Input jumlah porsi dan status member
         System.out.print("Masukkan jumlah porsi   : ");
         int porsi = m.nextInt();
 
@@ -52,21 +55,21 @@ public class day38 {
         int diskon10 = 0;
         int diskonMember = 0;
 
-        // PROMO 1: IF BERDIRI SENDIRI
+        // PROMO 1: IF BERDIRI SENDIRI PERTAMA
         if (totalAwal > 50000) {
             diskon10 = (int) (totalAwal * 0.10);
             System.out.println("Selamat! Anda dapat Diskon Belanja Besar 10% (Potongan Rp " + diskon10 + ")");
         }
 
-        // PROMO 2: IF BERDIRI SENDIRI (TIDAK PAKAI ELSE IF DARI PROMO 1)
-        if (member == true) {
+        // PROMO 2: IF BERDIRI SENDIRI KEDUA (Tanpa else if)
+        if (member) {
             diskonMember = 5000;
             System.out.println("Selamat! Anda dapat Potongan Member (Potongan Rp 5000)");
         }
 
         System.out.println("-------------------------------------------");
 
-        // Hitung Total Pembayaran Akhir
+        // Total Pembayaran Akhir
         int totalBayar = totalAwal - diskon10 - diskonMember;
         System.out.println("Total yang harus dibayar : Rp " + totalBayar);
 
