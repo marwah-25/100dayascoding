@@ -12,7 +12,7 @@ public class day68 {
                 if (j == M && i == n) {
                     System.out.print("*");
                 } else {
-                    System.out.print("* ");
+                    System.out.print("*");
                 }
             }
         }
