@@ -9,14 +9,11 @@ public class day68 {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= M; j++) {
-                if (j == M) {
+                if (j == M && i == n) {
                     System.out.print("*");
                 } else {
-                    System.out.print("*");
+                    System.out.print("* ");
                 }
-            }
-            if (i < n) {
-                System.out.println();
             }
         }
 
